@@ -1,23 +1,27 @@
 class Words(object):
 
-    def __init__(self,name = None,Words = {'Goat','Eagle','Apple','Football','Lady'}):
+    def __init__(self,name = None,Words = ['Goat','Eagle','Apple','Football','Lady']):
         self.name = name
         self.Words = Words
         
 
     def add(self):
         self.name = raw_input('add your own words: ')
-        self.words.append(name)
+        self.Words.append(self.name)
 
     def words(self):    
         self.word = raw_input('A four legged animal? ')
-        if self.word != self.Word[0]:
+        if self.word != self.Words[0]:
+            print("Wrong Answer",'But you may be right but that\'s not what I want')
             self.word = raw_input('A kind of bird? ')
-        elif self.word != self.Word[1]:
+        elif self.word != self.Words[1]:
+            print("Wrong Answer",'But you may be right but that\'s not what I want')
             self.word = raw_input('A type of fruit? ')               
-        elif self.word != self.Word[2]:
+        elif self.word != self.Words[2]:
+            print("Wrong Answer",'But you may be right but that\'s not what I want')
             self.word = raw_input('A type of sport? ')                    
-        elif self.word != self.Word[3]:
+        elif self.word != self.Words[3]:
+            print("Wrong Answer",'But you may be right but that\'s not what I want')
             self.word = raw_input('A gentle woman?' )
 
         else:
